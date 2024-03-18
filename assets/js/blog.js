@@ -3,7 +3,6 @@ checkbox.addEventListener("change", () => {
     document.body.classList.toggle("dark")
 })
 
-
 window.addEventListener('load', () => {
     const displayPosts = function (blogPosts) {
         const blogPosts = JSON.parse(localStorage.getItem("blogPosts"));
@@ -30,16 +29,4 @@ window.addEventListener('load', () => {
             });
         }
     };
-});
-
-        /*object.entries(blogPost).foreach(([key, value])); {
-            const keyValueElement = document.createElement('span')
-            keyValueElement.textContent = '${key}: ${value}';
-            objectElement.appendChild(keyValueElement);
-        }
-        submittedpost.appendChild(objectElement)*/
-    });
-       
-    
-   
 });
