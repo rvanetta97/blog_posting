@@ -15,7 +15,7 @@ form.addEventListener('submit', function(e) {
     const blogPost = {
         author: uname,
         title: blogtitle,
-        Content: bcontent
+        ontent: bcontent
     };
     console.log(blogPost)
     blogPosts.push(blogPost);
