@@ -24,6 +24,5 @@ form.addEventListener('submit', function(e) {
   
 /*redirects user to the new page*/
     window.location.href= 'https://rvanetta97.github.io/blog_posting/blog.html';
-
     return
 });
