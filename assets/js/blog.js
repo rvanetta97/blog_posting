@@ -17,19 +17,19 @@ window.addEventListener('load', () => {
                 const title = document.createElement('span');
                 title.textContent = blogPost.title;
                 post.appendChild(title);
-                title.setAttribute("id", "title")
+                title.id= "title";
 
                 const content = document.createElement('span');
                 content.textContent = blogPost.content;
                 post.appendChild(content);
-                content.setAttribute("id", "content")
+                content.id= "content";
                 
 
                 const author = document.createElement('span');
                 author.textContent = blogPost.author;
                 post.appendChild(author);
 
-                author.setAttribute("id", "author")
+                author.id= "author";
 
                 submittedpost.appendChild(post);
             });
