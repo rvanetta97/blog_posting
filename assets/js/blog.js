@@ -4,7 +4,6 @@ checkbox.addEventListener("change", () => {
 })
 
 window.addEventListener('load', () => {
-    var displayPosts = function (blogPosts) {
         const blogPosts = JSON.parse(localStorage.getItem("blogPosts"));
         const submittedpost = document.getElementById('submittedpost');
         submittedpost.innerHTML = '';
@@ -12,6 +11,8 @@ window.addEventListener('load', () => {
         if (Array.isArray(blogPosts)) {
             blogPosts.forEach(blogPost => {
                 const post = document.createElement('div');
+
+                post.classList.add('box')
 
                 const title = document.createElement('span');
                 title.textContent = blogPost.title;
@@ -28,5 +29,5 @@ window.addEventListener('load', () => {
                 submittedpost.appendChild(post);
             });
         }
-    };
+    
 });
