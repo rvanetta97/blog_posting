@@ -3,7 +3,7 @@ checkbox.addEventListener("change", () => {
     document.body.classList.toggle("dark")
 })
 
-window.addEventListener('load', () => {
+window.addEventListener('load', (displayPosts) => {
     const displayPosts = function (blogPosts) {
         const blogPosts = JSON.parse(localStorage.getItem("blogPosts"));
         const submittedpost = document.getElementById('submittedpost');
