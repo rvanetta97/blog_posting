@@ -3,24 +3,25 @@ checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
 
-const form = document.getElementById("form").value
-
-
-form.addEventListener("submit", function(e) {
+document.getElementById('form').addEventListener("submit", function(e) {
     e.preventDefault();
     const uname = document.getElementById("uname").value
     const blogtitle = document.getElementById("blogtitle").value
     const bcontent = document.getElementById("bcontent").value
     
+    let blogPosts = JSON.parse(localstorage.getItem('blogPosts')) || []
+
     const blogPost = {
       author: uname,
       title: blogtitle,
       Content: bcontent
     };
     
+    blogPosts.push(blogPost)
+
     const blogPostJSON = JSON.stringify(blogPost);
 
-    localStorage.setItem('blogPost', blogPostJSON);
+    localStorage.setItem('blogPost', JSON.stringify(blogPosts));
     /*const username = uname.value 
     const title = blogtitle.value 
     const blogpost = bcontent.value
@@ -29,6 +30,6 @@ form.addEventListener("submit", function(e) {
     localStorage.setItem("title", blogtitle.value);
     localStorage.setItem("blogpost", bcontent.value);*/
 
-    window.location.href= 'blog.html';
+    window.location.href= 'https://rvanetta97.github.io/blog_posting/blog.html';
     /*return*/
 })
