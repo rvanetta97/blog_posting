@@ -18,13 +18,19 @@ window.addEventListener('load', () => {
                 title.textContent = blogPost.title;
                 post.appendChild(title);
 
+                title.idList.add('title')
+
                 const content = document.createElement('span');
                 content.textContent = blogPost.content;
                 post.appendChild(content);
 
+                content.idList.add('content')
+
                 const author = document.createElement('span');
                 author.textContent = blogPost.author;
                 post.appendChild(author);
+
+                author.idList.add('author')
 
                 submittedpost.appendChild(post);
             });

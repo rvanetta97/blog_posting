@@ -71,8 +71,13 @@ body {
     padding-bottom: 10px;
     background-color: #F3E0C1;
 }
-#submittedpost {
-   
+#title {
+   position: relative;
+   z-index: 2;
+}
+#content {
+    position: relative;
+    z-index: 1;
 }
 .box {
     border: 1px solid black;
