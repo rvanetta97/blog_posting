@@ -84,10 +84,10 @@ body {
     border-radius: 8px;;
     margin: 10px;
     display: block;
-    /*align-items: center;
+    align-items: center;
     justify-content: center;
     height: fit-content;
-    flex-direction: column;*/
+    flex-direction: column;
 }
 
 footer {
