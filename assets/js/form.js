@@ -29,6 +29,6 @@ form.addEventListener("submit", function(e) {
     localStorage.setItem("title", blogtitle.value);
     localStorage.setItem("blogpost", bcontent.value);*/
 
-    window.location.href= 'https://rvanetta97.github.io/blog_posting/blog.html';
+    window.location.href= 'blog.html';
     /*return*/
 })
