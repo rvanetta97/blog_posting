@@ -4,7 +4,7 @@ checkbox.addEventListener("change", () => {
 })
 
 window.addEventListener('load', (displayPosts) => {
-    const displayPosts = function (blogPosts) {
+    var displayPosts = function (blogPosts) {
         const blogPosts = JSON.parse(localStorage.getItem("blogPosts"));
         const submittedpost = document.getElementById('submittedpost');
         submittedpost.innerHTML = '';
