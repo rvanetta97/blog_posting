@@ -3,7 +3,8 @@ checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
 
-localStorage.getItem('username')
-localStorage.getItem('title')
-localStorage.getItem('blog-post')
-
+window.addEventListener('load', () => {
+    const username = localStorage.getItem('uname')
+    const title = localStorage.getItem('blogtitle')
+    const blogpost= localStorage.getItem("blogpost")
+})

@@ -3,10 +3,10 @@ checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
 
-const form = document.getElementById("form")
-const uname = document.getElementById("uname")
-const blogtitle = document.getElementById("blogtitle")
-const bcontent = document.getElementById(bcontent)
+const form = document.getElementById("form").value
+const uname = document.getElementById("uname").value
+const blogtitle = document.getElementById("blogtitle").value
+const bcontent = document.getElementById("bcontent").value
 
 form.addEventListener("submit", function(e) {
     e.preventDefault();
@@ -16,7 +16,8 @@ form.addEventListener("submit", function(e) {
 
     localStorage.setItem("username", uname.value);
     localStorage.setItem("title", blogtitle.value);
-    localStorage.setItem("blog-post", bcontent.value);
+    localStorage.setItem("blogpost", bcontent.value);
 
-    window.location.href="blog.html"
+    window.location.href="./blog.html";
+    return
 })
