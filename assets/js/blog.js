@@ -18,11 +18,11 @@ window.addEventListener('load', (displayPosts) => {
                 post.appendChild(title);
 
                 const content = document.createElement('span');
-                content.textContent = blogPost.text;
+                content.textContent = blogPost.content;
                 post.appendChild(content);
 
                 const author = document.createElement('span');
-                author.textContent = blogPost.authorName;
+                author.textContent = blogPost.author;
                 post.appendChild(author);
 
                 submittedpost.appendChild(post);
