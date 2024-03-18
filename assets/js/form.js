@@ -18,5 +18,5 @@ form.addEventListener("submit", function(e) {
     localStorage.setItem("title", blogtitle.value);
     localStorage.setItem("blog-post", bcontent.value);
 
-    window.location.href=""
+    window.location.href="blog.html"
 })
