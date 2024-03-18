@@ -22,7 +22,6 @@ form.addEventListener('submit', function(e) {
     const blogPostsJSON = JSON.stringify(blogPosts);
     localStorage.setItem('blogPosts', blogPostsJSON);
   
-
 /*redirects user to the new page*/
     window.location.href='https://rvanetta97.github.io/blog_posting/blog.html';
     return
