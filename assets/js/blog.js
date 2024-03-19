@@ -2,6 +2,10 @@ const checkbox = document.getElementById("checkbox")
 checkbox.addEventListener("change", () => {
     document.body.classList.toggle("dark")
 })
+const bttn = document.getElementById("bttn")
+bttn.addEventListener("click", () => {
+    window.location.href='https://rvanetta97.github.io/blog_posting/';
+})
 
 window.addEventListener('load', () => {
         const blogPosts = JSON.parse(localStorage.getItem("blogPosts"));
