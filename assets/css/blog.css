@@ -86,7 +86,7 @@ body {
     display: block;
     align-items: center;
     justify-content: center;
-    height: fit-content;
+    height: 300px;
     flex-direction: column;
 }
 
