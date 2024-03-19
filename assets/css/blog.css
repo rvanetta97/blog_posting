@@ -106,15 +106,21 @@ body {
 footer {
     background: #dcb666;
     width: 100%;
-    height: 40px;
-    display: inline-block;
-    text-align: center;
+    height: 85px;
+    display: block;
     margin-top: 35px;
     border-top: 2px solid black;
 }
-
+#contactinfo {
+   display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    float: left; 
+    text-align: left
+}
 #footer-content {
     display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
